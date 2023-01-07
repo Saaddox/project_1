@@ -1,0 +1,30 @@
+/*#id2 td:first-child img{
+	height: 200px;
+	width: 200px;
+}
+#id2 {
+	width: 2px;
+	height: auto;
+}*/
+td{
+	font-size: 10pt;
+}
+#tableau1 td{
+	padding-left:45px;
+}
+
+#tableau1 tr td:first-child{
+	padding-left:30px;
+	padding-right:30px;
+}
+
+marquee img{
+	height:auto;
+	width:auto;
+	
+}
+
+#tableau2 img{
+	height:32px;
+	width:32px;
+}

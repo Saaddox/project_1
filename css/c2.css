@@ -1,0 +1,75 @@
+.centre .Box
+{
+  height: 448px;
+}
+.centre
+{
+  width: 100%;
+  height: 663px;
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #fff;
+}
+.Box
+{
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1075px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  display: flex;
+}
+.centre .Box .imgBx
+{ 
+  
+  width: 150px;
+  flex:0 0 150px;
+}
+.centre .Box .imgBx img{
+   max-width: 100%;
+}
+.centre h2{
+  font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+  font-size: 32px;
+   margin: 0;
+   padding-left: 0;
+   text-align: center;
+}
+.centre h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #04aa6d;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.centre h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.centre ul li p
+{
+  margin: 0;
+  padding: 15px 15px 0;
+  text-align: justify;
+}

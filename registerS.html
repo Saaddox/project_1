@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="DAZZAZI AHMED SAID">
+		<title>register</title>
+		<link rel="stylesheet" href="css/head.css">
+		<link rel="stylesheet" href="css/gauche.css">
+		<link rel="stylesheet" href="css/c2.css">
+		<link rel="stylesheet" href="css/c3.css">
+		<link rel="stylesheet" href="css/c4.css">
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="javascript" href="js/j1.js"/>
+		<link rel="shortcut icon" href="images\logo.png">
+		<!--link rel="javascript" href="js/j2.js"/-->
+		<script>
+			function affiche(){
+    var nom = document.forme.name.value;
+    var prenom = document.forme.pname.value;
+    var tel = document.forme.tel.value;
+    var con = document.forme.contry.value;
+    var char =" Votre registration a était bien enregistré mr "+nom+" "+prenom;
+    alert(char);
+}
+		</script>
+		<style>
+			button:hover {opacity: 0.8;}
+			td,caption{font-weight:bold;}
+			table{border:2px solid black;border-radius:15px;padding:0px 50px 0px 50px;margin:auto;}
+			#Register,#Reset{width:100px;padding: 10px 18px;background-color: #04AA6D;border-radius:15px;}
+			 caption {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+}
+table{
+     margin-top:76px;
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+caption::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+caption::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #04aa6d;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+		</style>
+
+	</head>
+	<body>
+		<!-- ======= header ======= -->
+	<header class="entete" >
+			
+		<nav class="top-nav">
+			<a class="logo" href="index.html"><img src="images/logo_transparent.png" id="lg"></a>
+		  <div class="lists-container" id="lists-container">
+			<ul class="link-list" id="link-list">
+		
+				<li id="bu"><a href="AGENCE.html" >L'AGENCE</a></li>
+				<li id="bu"><a href="nous.html" >CONSEIL</a></li>
+				<li id="bu"><a href="registerS.html" >REGISTRATION</a></li>
+				<li id="bu"><a href="Contact.html" >CONTACT</a></li>
+				
+			</ul>
+			<ul class="social-list">
+				<li><a href="index.html"><img src="images\home.png" id="h"></a></li>
+				<li><a href="#" ><img src="images\utilisateur.png" id="h"></a></li>
+				<li><a href="#"><img src="images\loupe.png" id="h"></a></li>
+				<li>
+					<div class="bd">
+						<button onclick="document.getElementById('id1').style.display='block'" style="width:auto;">Login</button>
+
+						<div id="id1" class="b1">
+						  
+						  <form name="form" class="b1-content animate" method="post">
+							<div class="imgcontainer">
+							  <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Close B1">&times;</span>
+							  <img src="images/profil-de-lutilisateur.png" alt="Avatar" class="avatar"/>
+							</div>
+							<div class="container">
+							  <label for="uname"><b>Username</b></label>
+							  <input type="name" placeholder="Enter Username" name="uname" required>
+						
+							  <label for="psw"><b>Password</b></label>
+							  <input type="password" placeholder="Enter Password" name="psw" required>
+								
+							  <label for="tel"><b>Phone</b></label>
+							  <input type="tel" placeholder="(+212)" name="tel" required>
+							  <button type="submit" onclick="javascript:affiche();">Login</button>
+							  <label>
+								<input type="checkbox" checked="checked" name="remember"> Remember me
+							  </label>
+							</div>
+						  </form>
+						</div>
+						</div>
+
+				</li>
+			</ul>
+		  </div>
+		  <button class="btn menu-btn" id="menu-btn"><i class="ri-menu-line"></i></button>
+		  <button class="btn close-btn" id="close-btn"><i class="ri-close-fill"></i></button>
+		</nav>
+</header>
+<!-- ======= End header ======= -->
+	<div class="gauche">	
+	<nav role="navigation">
+	<div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="AGENCE.html">Agence</a></li>
+		<li><a href="registerS.html">Registration</a></li>
+		<li><a href="Contact.html">Contact</a></li>
+		<li><a href="rating.html">Avis</a></li>
+    </ul>
+	</div>
+	</nav>
+	</div>
+	<div id="id01" class="modal">
+	<form name="forme">
+	<table>
+	
+	<caption>Registration</caption>
+			<tr>
+				<td>Nom </td>
+				<td><input type="name" name="name" placeholder="Entrer first name" required /></td>
+			</tr>
+			<tr>
+				<td>Prenom </td>
+				<td><input type="name" name="pname" required  placeholder="Entrer laste name"/></td>
+			</tr>
+			<tr>
+				<td>Phone </td>
+				<td><input type="tel" name="tel" placeholder="(+212)" required /></td>
+			</tr>
+			<tr>
+				<td>Contry</td>
+				<td><select name="contry">
+						<option value="Morocco">Morocco</option>
+						<option value="France">France</option>
+						<option value="Spain">Spain</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+				<button type="submit" value="Register" id="Register" onclick="javascript:affiche();">submit</button>
+				<button type="reset" value="Reset" id="Reset" >reset</button>
+				</th>
+			</tr>
+		</table>
+	
+	
+	
+	</form>
+	</div>
+	</body>
+</html>
